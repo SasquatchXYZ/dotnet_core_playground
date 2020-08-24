@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddWithThreads", "AddWithThreads\AddWithThreads.csproj", "{DB6B643C-568D-4DFE-AF59-80EA18AC386C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimerApp", "TimerApp\TimerApp.csproj", "{F13B16BE-0670-40F4-9292-009AAAFB998C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiThreadedPrinting", "MultiThreadedPrinting\MultiThreadedPrinting.csproj", "{26140C84-02AE-4839-937F-9292E1815064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadpoolPrinting", "ThreadpoolPrinting\ThreadpoolPrinting.csproj", "{DD4381B2-865D-47EF-8A04-6B2934B383E4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB6B643C-568D-4DFE-AF59-80EA18AC386C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6B643C-568D-4DFE-AF59-80EA18AC386C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6B643C-568D-4DFE-AF59-80EA18AC386C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6B643C-568D-4DFE-AF59-80EA18AC386C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13B16BE-0670-40F4-9292-009AAAFB998C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13B16BE-0670-40F4-9292-009AAAFB998C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13B16BE-0670-40F4-9292-009AAAFB998C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13B16BE-0670-40F4-9292-009AAAFB998C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26140C84-02AE-4839-937F-9292E1815064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26140C84-02AE-4839-937F-9292E1815064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26140C84-02AE-4839-937F-9292E1815064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26140C84-02AE-4839-937F-9292E1815064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD4381B2-865D-47EF-8A04-6B2934B383E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD4381B2-865D-47EF-8A04-6B2934B383E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD4381B2-865D-47EF-8A04-6B2934B383E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD4381B2-865D-47EF-8A04-6B2934B383E4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

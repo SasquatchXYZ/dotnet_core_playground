@@ -65,6 +65,7 @@ namespace DataParallelismWithForEach
                         });
                     }
                 });
+                this.Dispatcher.Invoke((Action) delegate { this.Title = "Done!"; });
             }
             catch (OperationCanceledException ex)
             {

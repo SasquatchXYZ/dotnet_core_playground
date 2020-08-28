@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoringLib", "Monitoring
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitoringApp", "MonitoringApp\MonitoringApp.csproj", "{07234B49-A5BA-426B-BC03-32E6F925AB10}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithTasks", "WorkingWithTasks\WorkingWithTasks.csproj", "{A2AA666D-D412-4AA5-9F3F-77E60018F5C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{07234B49-A5BA-426B-BC03-32E6F925AB10}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07234B49-A5BA-426B-BC03-32E6F925AB10}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07234B49-A5BA-426B-BC03-32E6F925AB10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2AA666D-D412-4AA5-9F3F-77E60018F5C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2AA666D-D412-4AA5-9F3F-77E60018F5C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2AA666D-D412-4AA5-9F3F-77E60018F5C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2AA666D-D412-4AA5-9F3F-77E60018F5C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

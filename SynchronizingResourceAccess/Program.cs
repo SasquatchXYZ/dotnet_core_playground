@@ -8,10 +8,10 @@ namespace SynchronizingResourceAccess
 {
     class Program
     {
-        static Random r = new Random();
-        private static string Message; // a shared resource
-        private static int Counter; // another shared resource
-        static object conch = new object();
+        private static readonly Random _r = new Random();
+        private static string _message; // a shared resource
+        private static int _counter; // another shared resource
+        private static readonly object _conch = new object();
 
         static void Main(string[] args)
         {
@@ -24,34 +24,48 @@ namespace SynchronizingResourceAccess
             Task.WaitAll(new Task[] {a, b});
 
             WriteLine();
-            WriteLine($"Results: {Message}.");
+            WriteLine($"Results: {_message}.");
             WriteLine($"{watch.ElapsedMilliseconds:#,##0} elapsed milliseconds.");
-            // WriteLine($"{Counter} string modifications.");
+            WriteLine($"{_counter} string modifications.");
         }
 
         static void MethodA()
         {
-            lock (conch)
+            try
             {
+                Monitor.TryEnter(_conch, TimeSpan.FromSeconds(15));
+
                 for (var i = 0; i < 5; i++)
                 {
-                    Thread.Sleep(r.Next(2_000));
-                    Message += "A";
+                    Thread.Sleep(_r.Next(2_000));
+                    _message += "A";
+                    Interlocked.Increment(ref _counter);
                     Write(".");
                 }
+            }
+            finally
+            {
+                Monitor.Exit(_conch);
             }
         }
 
         static void MethodB()
         {
-            lock (conch)
+            try
             {
+                Monitor.TryEnter(_conch, TimeSpan.FromSeconds(15));
+
                 for (var i = 0; i < 5; i++)
                 {
-                    Thread.Sleep(r.Next(2_000));
-                    Message += "B";
+                    Thread.Sleep(_r.Next(2_000));
+                    _message += "B";
+                    Interlocked.Increment(ref _counter);
                     Write(".");
                 }
+            }
+            finally
+            {
+                Monitor.Exit(_conch);
             }
         }
     }
